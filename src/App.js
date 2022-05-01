@@ -1,9 +1,17 @@
+import { GlobalStyles } from "./components/styles/Global";
+import Header from "./components/Header";
+import Route from "./components/Route";
+import Main from "./components/Main";
+
 
 const App = () => {
   return (
-    <div>
-      <h1>Hola mundo</h1>
-    </div>
+    <>
+    <GlobalStyles />
+    <Header />
+    <Route/>
+    <Main/>
+    </>
   )
 }
 
