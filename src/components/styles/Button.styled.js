@@ -30,6 +30,7 @@ export const MainButton = styled.button`
 	margin-right: 1.2rem;
 	border: none;
 	cursor: pointer;
+	border-radius: .8rem;
 
 	&:hover::before{
 		transition: all .4s;
@@ -60,4 +61,18 @@ export const MainButton = styled.button`
 export const DownloadButton = styled(MainButton)`
 	font-size: 1.6rem;
 	font-family: 'Jost', sans-serif;
+`;
+
+
+export const ButtonForm = styled(MainButton)`
+	margin-right: 0;
+	height: 4rem;
+
+	@media ${ devices.tablet }{
+		
+		&::before{
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
 `;
